@@ -5,5 +5,19 @@
         <meta charset="UTF-8">
     </head>
     <body>
+    <button onclick=func()>Give it a try!</button>
     </body>
 </html>
+
+
+<script>
+    function func(){
+        var name=prompt("Please Enter your name:", "Codi Coder")
+        if (name==null || name==""){
+            alert("Oh no! You haven't entered anything! :(")
+        }
+        else{
+            alert("Hello, "+name)
+        }
+    }
+</script>
