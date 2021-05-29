@@ -7,9 +7,21 @@
     <body>
         <form>
             <label for="name">name : </label><input type="text" name="name" id="name"/>
-            <label for="surname">surname : </label><input type="text" name="surname" id="surname"/>
+            <label for="surname">surname : </label><input type="text"  name="surname" id="surname"/>
             <label for="city">city : </label><input type="text" name="city" id="city"/>
-            <button  name="validate" id="validate">Validate</button>
+            <button  name="validate" id="validate" onclick="func(document.getElementById('name').value,document.getElementById('surname').value,document.getElementById('city').value)">Validate</button>
         </form>
     </body>
 </html>
+
+
+<script>
+    function func(name,surname,city){
+        if(name=="" || surname=="" || city==""){
+            alert("You've enterd one or more emtpy fields!!")
+        }
+        else{
+            alert("Hello "+name+" "+surname+ "\n I love people who come from "+city+"!")
+        }
+    }
+</script>
