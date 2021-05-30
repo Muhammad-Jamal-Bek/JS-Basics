@@ -1,3 +1,4 @@
 function func(){
-    alert ("thank you for particpating !")
+    document.querySelector("#name").onblur(
+    alert ("thank you for particpating !"))
 }
